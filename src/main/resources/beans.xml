@@ -5,6 +5,6 @@
     <bean id="phuThuoc1" class="di.PhuThuoc1"></bean>
 
     <bean id="khongPhuThuoc" class="di.KhongPhuThuoc">
-        <property name="phuThuoc1" ref="phuThuoc1"></property>
+        <constructor-arg ref="phuThuoc1"></constructor-arg>
     </bean>
 </beans>
