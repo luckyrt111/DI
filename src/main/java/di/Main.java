@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         KhongPhuThuoc khongPhuThuoc = context.getBean("khongPhuThuoc",KhongPhuThuoc.class);
-        int sum = khongPhuThuoc.add(2,2);
+        int sum = khongPhuThuoc.add(3,2);
         System.out.println("Sum: "+sum);
     }
 }
