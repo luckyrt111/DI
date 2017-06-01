@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="phuThuoc1" class="di.PhuThuoc1"></bean>
 
-    <bean id="khongPhuThuoc" class="di.KhongPhuThuoc">
+    <bean id="khongPhuThuoc" class="di.KhongPhuThuoc" autowire="constructor">
         <constructor-arg ref="phuThuoc1"></constructor-arg>
     </bean>
 </beans>
